@@ -1,0 +1,130 @@
+.container {
+  height: 64px;
+  background-color: #1a1d1f;
+  color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 55px;
+}
+
+.logo {
+  width: 130px;
+  height: 45px;
+  margin: 20px;
+}
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right > .button {
+  padding: 5px;
+  margin: 10px;
+}
+
+.right > .searchContainer {
+  position: relative;
+}
+
+.right > .searchContainer > span {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -45%);
+  left: 22px;
+  color: black;
+}
+
+.right > .searchContainer > .search {
+  padding: 8px 10px 8px 45px;
+  margin: 10px;
+  /* color: #ffff; */
+  background-color: #808080;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+}
+
+.right > .searchContainer > .search::placeholder {
+  color: white !important;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+.right > .hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 5px;
+  margin: 10px;
+}
+
+.right > .hamburger:hover {
+  background-color: rgba(250, 250, 250, 0.4);
+  transition: ease-in-out 300ms;
+}
+
+.collapsedDisplay {
+  position: absolute;
+  top: 64px;
+  left: 0px;
+  width: 100vw;
+  background-color: #1a1d1f;
+  transition: ease-in-out 300ms;
+  border-bottom: 1px silver solid;
+  z-index: 1000;
+}
+
+.collapsedDisplay > .button {
+  padding: 1rem;
+  border-bottom: 1px silver solid;
+}
+
+.collapsedDisplay > .search {
+  padding: 10px;
+  margin: 1rem;
+  width: calc(100vw - (10px + 1rem));
+  outline: none;
+  z-index: 1000;
+  border: none;
+}
+
+.open {
+  display: block;
+  transition: ease-in-out 300ms;
+}
+
+.close {
+  display: none;
+  transition: ease-in-out 300ms;
+}
+
+@media only screen and (max-width: 900px) {
+  .right > .button {
+    display: none;
+  }
+  .right > .searchContainer {
+    display: none;
+  }
+  .right > .hamburger {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .collapsedDisplay {
+    display: none !important;
+  }
+}

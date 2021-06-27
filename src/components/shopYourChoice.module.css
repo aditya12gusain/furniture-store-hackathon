@@ -1,0 +1,163 @@
+.mainContainer {
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 25px;
+}
+
+.title > h1 {
+  margin: 1rem 0 0 0;
+}
+
+.title > p {
+  margin: 5px;
+}
+
+.chairTagLine,
+.tableTagLine,
+.teaSettagLine,
+.lampTagLine {
+  font-style: italic;
+}
+.sofaTagLine,
+.sofaTagLine > p {
+  text-align: center;
+  margin: 1rem 0;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.sofaBtnAndImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sofaBtnAndImg > h3 {
+  margin: 0px;
+  font-size: 25px;
+}
+
+.sofaBtnAndImg > button {
+  margin: 1rem 0;
+  padding: 8px 10px;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  font-weight: 600 !important;
+}
+
+.sofaBtnAndImg > button:hover {
+  background: black;
+  transition: ease-in 300ms;
+  color: white;
+}
+
+.sofaimg {
+  width: 80%;
+}
+
+.chairsAndTables {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chair,
+.tables {
+  flex: 50%;
+  min-width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chairImg,
+.tableImage {
+  width: 70%;
+  font-size: 13px;
+}
+
+.sofaBtnAndImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chairsAndTables {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chairsAndTables {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.lampsAndteaSet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sofaLine {
+  margin: 1rem 0 0 0 !important;
+}
+
+.chair {
+  margin: 1rem 0px;
+}
+
+.chair > h3 {
+  margin: 0px;
+  font-size: 25px;
+}
+
+.chair > button {
+  margin: 1rem 0;
+  padding: 8px 10px;
+  border: 2px solid black;
+  background: transparent;
+  color: black;
+  font-weight: 600 !important;
+}
+
+.chair > button:hover {
+  background: black;
+  transition: ease-in 300ms;
+  color: white;
+}
+
+.tableTagLine {
+  text-align: center;
+  margin: 1rem 0;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.sofaLine {
+  text-align: center;
+  margin: 1rem 0;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 16px;
+}
+.teaSettagLine {
+  text-align: center;
+  margin: 1rem 0;
+  font-style: oblique;
+  font-weight: 600;
+  font-size: 16px;
+}

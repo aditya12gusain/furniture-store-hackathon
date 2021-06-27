@@ -1,0 +1,62 @@
+.mainContainer {
+  background: #1c1d1d;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.footerContainer {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.icon,
+.Services,
+.Link,
+.Support {
+  min-width: 200px;
+  flex: 25%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo {
+  width: 150px;
+  padding: 1rem 0;
+  /* margin-left: 20px; */
+}
+
+.Link,
+.Support,
+.Services {
+  color: #ffffff;
+}
+
+.SocialMediaLinks {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.SocialMediaLinksImg {
+  margin: 10px;
+}
+
+.teamLine {
+  text-align: right;
+  padding: 0 4px 30px 0;
+}

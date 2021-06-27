@@ -1,0 +1,69 @@
+.container {
+  height: calc(100vh - 64px);
+  background-color: #1a1d1f;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.heading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 80px !important;
+}
+.tag {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 20px !important;
+}
+.placeholder {
+  padding: 40px 40px 40px 80px;
+}
+
+.container > .placeholder > h1 {
+  margin: 0px;
+  font-size: 4rem;
+  padding: 0px;
+}
+
+.container > .placeholder > h5 {
+  font-size: 1rem;
+  margin: 0px;
+  padding: 10px 0;
+}
+
+.container > .placeholder > button {
+  margin: 1.5rem 0;
+  font-size: 20px;
+  padding: 8px 40px;
+  color: white;
+  background-color: transparent;
+  border: 2px white solid;
+}
+
+.container > .placeholder > button:hover {
+  transition: ease-in-out 300ms;
+  background-color: white;
+  color: black;
+}
+
+.chairImage {
+  height: calc(100vh - 64px);
+  width: 40vw;
+  position: absolute;
+  right: 0px;
+  transform: translate(45%);
+  top: 0px;
+}
+
+@media only screen and (max-width: 900px) {
+  .placeholder {
+    padding: 30px;
+  }
+  .chairImage {
+    display: none;
+  }
+}

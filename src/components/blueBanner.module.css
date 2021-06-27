@@ -1,0 +1,49 @@
+.bluebanner {
+  background: #6ca4a4;
+  color: white;
+  word-spacing: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 48px;
+  text-align: center;
+}
+
+.time {
+  font-weight: 700 !important;
+}
+
+.blueBannerBtn {
+  padding: 8px 40px;
+  background: transparent;
+  border: 3px solid white;
+  color: white;
+  outline: none;
+  margin: 0 1rem;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.blueBannerBtn:hover {
+  transition: ease-in 500ms;
+  border: 2px solid white;
+  background: white;
+  color: #6ca4a4;
+}
+
+@media only screen and (max-width: 634px) {
+  .title {
+    font-weight: 400;
+    text-align: center;
+    margin: 0px 0px 1rem 0px;
+  }
+  .bluebanner {
+    padding: 2rem;
+  }
+}

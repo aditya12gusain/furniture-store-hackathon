@@ -1,0 +1,52 @@
+.powContainer {
+  overflow: hidden;
+  padding: 2rem;
+}
+
+.powContent {
+  margin: auto;
+  width: 80%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.imageSection {
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.productImages {
+  flex: 35%;
+}
+
+.powTitle {
+  margin: 10px 0 0 0;
+}
+
+.powTagLine {
+  width: 100%;
+  margin: 0;
+}
+
+.productImagesDesc {
+  text-align: center;
+  margin: 0rem 0 1rem 0;
+}
+
+.productContainer {
+  margin: 1.5rem 0;
+}
+
+.productImagesDesc > h2 {
+  margin: 0px;
+}
+
+.productImagesDesc > p {
+  margin: 5px 0 0 0;
+}

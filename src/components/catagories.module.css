@@ -1,0 +1,134 @@
+.container {
+  height: 100vh;
+  widows: 100%;
+  background: #e5e5e5;
+  display: flex;
+  flex-wrap: wrap;
+  color: #808080;
+}
+
+.catagoryContainer {
+  flex: 25%;
+  object-fit: cover;
+  object-position: center;
+  padding: 10px;
+  transition: ease-in-out 300ms;
+  min-width: 300px;
+  position: relative;
+}
+
+.textContainer {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  margin: 40px 20px;
+}
+
+.textContainer > h3 {
+  font-size: 25px;
+  margin: 0px;
+}
+
+.textContainer > span {
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+.catagoryContainer:hover {
+  background-image: url(./images/catagoryBackground2.png);
+  background-position: center;
+  background-size: cover;
+  transition: ease-in-out 500ms;
+  color: white;
+}
+
+#africanArt > .africanArt,
+#plate > .plate,
+#light > .light,
+#sofa > .sofa {
+  display: none;
+}
+
+#africanArt:hover > .africanArt {
+  position: absolute;
+  right: 2rem;
+  top: 0px;
+  display: block;
+  height: 80%;
+}
+
+#plate:hover > .plate {
+  position: absolute;
+  right: 2rem;
+  top: 0px;
+  display: block;
+  height: 80%;
+}
+
+#light:hover > .light {
+  position: absolute;
+  right: 2rem;
+  top: 0px;
+  display: block;
+  height: 80%;
+}
+
+#sofa {
+  overflow: hidden !important;
+}
+
+#sofa:hover > .sofa {
+  position: absolute;
+  right: 2rem;
+  top: 3rem;
+  /* transform: translateX(-40%); */
+  display: block;
+  height: 60%;
+}
+
+@media only screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .catagoryContainer {
+    height: 200px;
+  }
+  .textContainer {
+    text-align: right;
+    width: calc(100% - 40px);
+  }
+  .catagoryContainer:hover {
+    background-image: url(./images/group.png);
+    color: #746f58;
+  }
+  #africanArt:hover > .africanArt {
+    position: absolute;
+    left: 2.5rem;
+    top: -30px;
+    display: block;
+    height: 200px;
+  }
+  #plate:hover > .plate {
+    position: absolute;
+    left: 1rem;
+    top: 2.5px;
+    display: block;
+    height: 150px;
+  }
+  #light:hover > .light {
+    position: absolute;
+    left: 1rem;
+    top: 2.5px;
+    display: block;
+    height: 150px;
+  }
+  #sofa:hover > .sofa {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+    transform: translateX(-40%);
+    display: block;
+    height: 150px;
+  }
+}

@@ -1,0 +1,50 @@
+.features {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  min-height: 250px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.featuresLineOne,
+.featuresLineTwo,
+.featuresLineThree,
+.featuresLineFour {
+  padding: 1rem;
+  max-width: 250px;
+}
+
+.featuresLineOne > h3,
+.featuresLineTwo > h3,
+.featuresLineThree > h3,
+.featuresLineFour > h3 {
+  font-size: 20px;
+  margin: 0.2rem 0px 0.2rem 0;
+}
+
+.featuresLineOne > p,
+.featuresLineTwo > p,
+.featuresLineThree > p,
+.featuresLineFour > p {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+.icon {
+  height: 30px;
+  width: 30px;
+}
+
+@media only screen and (max-width: 1018px) {
+  .featuresLineOne,
+  .featuresLineTwo,
+  .featuresLineThree,
+  .featuresLineFour {
+    padding: 1rem;
+    max-width: 350px;
+  }
+}
